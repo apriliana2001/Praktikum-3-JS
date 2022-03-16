@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Javascript</title>
+<script>
+function cek(){
+a=parseFloat(document.kalkulator.angka1.value);
+b=parseFloat(document.kalkulator.angka2.value);
+if(isNaN(a) ||isNaN(b)){
+alert("maaf, silahkan masukan angka");
+}else{
+alert("masukan anda benar");
+}
+}
+function tambah(){
+cek();
+hasil=a+b;
+document.kalkulator.output.value=hasil;
+}
+</script>
+</head>
+<body>
+<h2>kalkulator gue</h2>
+<form name="kalkulator">
+<p>BIL 1<input type="text" name="a" size="20">
+	BIL 2<input type="text" name="b" size="20">
+</p>
+<input type ="button" value="+" onclick="tambah()">
+<input type ="button" value="-" onclick="kurang()">
+<input type ="button" value="x" onclick="kali()">
+<input type ="button" value=":" onclick="bagi()">
+<br/>
+Hasil<input type="text" name="hasil">
+</form>
+</body>
+</html>

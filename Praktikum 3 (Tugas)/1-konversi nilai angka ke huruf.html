@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Konversi Nilai Angka Menjadi Nilai Huruf</title>
+</head>
+<script language="Javascript">
+	function test() {
+	// body...
+	var val1 = document.Konversi.angka.value
+
+	if (val1>=41&&55)
+		document.Konversi.huruf.value="D"
+	if (val1>=56&&60)
+		document.Konversi.huruf.value="C"
+	if (val1>=61&&65)
+		document.Konversi.huruf.value="BC"
+	if (val1>=66&&70)
+		document.Konversi.huruf.value="B"
+	if (val1>=71&&80)
+		document.Konversi.huruf.value="AB"
+	if (val1>=81&&100)
+		document.Konversi.huruf.value="A"
+}
+</script>
+
+<body>
+	<fieldset style="width:400px">
+	<form method="Post" name="Konversi">
+		<p align="center"><strong>Program Konversi Nilai Angka Menjadi Nilai Huruf</strong></p>
+		<p>Input Nilai Angka : <input type="text" name="angka" size="10"></p>
+		<p>Hasil Konversi : <input type="text" name="huruf" size="10"></p>	
+		
+		<p align="center"><input type="button" value="Klik konversi" name="proses" onclick=test()></p>
+	</form>
+</fieldset>	
+</body>
+</html>

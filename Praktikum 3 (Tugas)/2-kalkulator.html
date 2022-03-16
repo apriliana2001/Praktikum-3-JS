@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kalkulator Sederhana</title>
+        <script src = "script.js"></script>
+    </head>
+    <body>
+        <fieldset style="width:400px">
+            <table>
+            	<tr>
+                    <p align="center"><strong>Program Kalkulator Sederhana</strong></p>
+                </tr>
+                <tr>
+                    <td>Input Angka ke-1:</td><td><input type = "number" id = "bil1" /></td>
+                </tr>
+                <tr>
+                    <td>Input Angka ke-2:</td><td><input type = "number" id = "bil2" /></td>
+                </tr>
+                <tr>
+                    <td>Hasil:</td><td><input type = "text" id = "res" readonly /></td>
+                </tr>
+            </table>
+            <table align="center">
+                <tr >
+                    <td><input type="button" id = "add" value = "+" onclick="operation('+')" /></td>
+                    <td><input type="button" id = "sub" value = "-" onclick="operation('-')" /></td>
+                    <td><input type="button" id = "mul" value = "*" onclick="operation('*')" /></td>
+                    <td><input type="button" id = "div" value = "/" onclick="operation('/')" /></td>
+                </tr>
+            </table>
+        </fieldset>
+    </body>
+</html>
